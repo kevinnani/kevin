@@ -1,0 +1,33 @@
+{
+    "navbar": [
+      { "id": 1, "name": "Home", "link": "home" },
+      { "id": 2, "name": "About", "link": "about" },
+      { "id": 3, "name": "Portfolio", "link": "portfolio" },
+      { "id": 4, "name": "Blog", "link": "blog" },
+      { "id": 5, "name": "Resume", "link": "resume" },
+      { "id": 6, "name": "Contact", "link": "contact" },
+      { "id": 7, "name": "Tech Stack", "link": "techStack" }
+    ],
+    "footer": {
+      "text": "© 2025 My Portfolio. All rights reserved."
+    },
+    "about": {
+      "title": "About Me",
+      "description": "I am a passionate web developer..."
+    },
+    "portfolio": [
+      {
+        "id": 1,
+        "title": "Project 1",
+        "description": "A great project...",
+        "image": "project1.jpg"
+      },
+      {
+        "id": 2,
+        "title": "Project 2",
+        "description": "Another amazing project...",
+        "image": "project2.jpg"
+      }
+    ]
+  }
+  

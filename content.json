@@ -1,0 +1,42 @@
+{
+  "navbar": [
+    { "id": 1, "name": "Home", "link": "home", "icon": "bi bi-house-door" },
+    { "id": 7, "name": "Tech Stack", "link": "techStack", "icon": "bi bi-code-slash" },
+
+    { "id": 2, "name": "About Me", "link": "about", "icon": "bi bi-person" },
+
+    { "id": 5, "name": "Resume", "link": "resume", "icon": "bi bi-file-earmark-text" },
+    { "id": 6, "name": "Contact", "link": "contact", "icon": "bi bi-envelope" }
+  ],
+    "techStack": [ 
+      { "id": 1, "name": "HTML", "icon": "fa FaHtml5" },
+      { "id": 2, "name": "CSS", "icon": "about" },
+      { "id": 3, "name": "JavaScript", "icon": "portfolio" },
+      { "id": 4, "name": "React.Js", "icon": "blog" },
+      { "id": 5, "name": "Node.Js", "icon": "resume" },
+      { "id": 6, "name": "SQL", "icon": "contact" },
+      { "id": 7, "name": "MySql", "icon": "techStack" }
+       ],
+    "footer": {
+      "text": "© 2025 My Portfolio. All rights reserved."
+    },
+    "about": {
+      "title": "About Me",
+      "description": "I am a passionate web developer..."
+    },
+    "portfolio": [
+      {
+        "id": 1,
+        "title": "Project 1",
+        "description": "A great project...",
+        "image": "project1.jpg"
+      },
+      {
+        "id": 2,
+        "title": "Project 2",
+        "description": "Another amazing project...",
+        "image": "project2.jpg"
+      }
+    ]
+  }
+  

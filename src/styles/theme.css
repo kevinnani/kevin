@@ -108,7 +108,7 @@ background: var(--circle_bg_color);
 .form_ipt input, textarea {
   background: var(--form_input_bg);
   border: none;
-  box-shadow: 0px 3px 18px -5px #FFFAD0;
+  /* box-shadow: 0px 3px 18px -5px #FFFAD0; */
 }
 
 

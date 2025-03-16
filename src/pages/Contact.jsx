@@ -93,7 +93,7 @@ export const Contact = () => {
               </div>
 
               <motion.input
-                className="w-100 submit-btn"
+                className="w-100 submit-btn btn btn-outline-dark btn-lg"
                 type="submit"
                 value="Submit"
                 whileHover={{ scale: 1.05 }}

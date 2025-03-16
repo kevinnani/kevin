@@ -58,7 +58,7 @@
     font-weight: 700;
 }
 .nav-links li a:hover .nav_icon{
-    color: red;
+    color: #28675c;
 }
 .nav_icon{
     color: var(--nav_icon_clr);

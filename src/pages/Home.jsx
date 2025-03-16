@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/Home.css";
 import '../styles/Twinkling.css';
 import { motion } from "framer-motion";
+import resum from '../assets/NAVEEN KUMAR SARILLA.pdf'
 
 export const Home = () => {
     return (
@@ -38,7 +39,7 @@ export const Home = () => {
 
                         {/* Right Section - Text Content */}
                         <motion.div 
-                            className="col-md-7 col-12"
+                            className="col-md-7 col-12 mt-4"
                             initial={{ x: 100, opacity: 0 }}
                             animate={{ x: 0, opacity: 1 }}
                             transition={{ duration: 1, delay: 0.5 }}
@@ -46,15 +47,17 @@ export const Home = () => {
                             <h1 className="fw-bold display-5">
                                 Welcome to my <span className="text_primary">Portfolio</span>
                             </h1>
-                            <p className="lead">
+                            <p className="lead ">
                                 I am a front-end developer with three years of experience in building interactive and high-performing web applications. Skilled in <span className="text_primary">React.js, Redux, JavaScript, Tailwind CSS, and Node.js</span>, I specialize in creating dynamic user interfaces and seamless user experiences.
                             </p>
 
                             {/* Call to Action Buttons */}
                             <div className="mt-4">
                                 <motion.a 
-                                    href="#portfolio" 
-                                    className="btn btn-primary btn-lg me-3"
+                                    target='_blank'
+                                    decibel
+                                    href={resum} 
+                                    className="btn btn-outline-dark btn-lg "
                                     whileHover={{ scale: 1.1 }}
                                     whileTap={{ scale: 0.9 }}
                                 >
@@ -62,7 +65,7 @@ export const Home = () => {
                                 </motion.a>
                                 <motion.a 
                                     href="#contact" 
-                                    className="btn btn-outline-dark btn-lg"
+                                    className="btn btn-outline-dark btn-lg m-2"
                                     whileHover={{ scale: 1.1 }}
                                     whileTap={{ scale: 0.9 }}
                                 >

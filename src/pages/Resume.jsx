@@ -7,7 +7,7 @@ export const Resume = () => {
             <div className="rem_container">
                 <h3>Resume</h3>
 
-            <a href={resum  } target="_blank">resume</a>
+            <a className='btn btn-outline-dark btn-lg' href={resum  } target="_blank">My Resume</a>
             </div>
         </div>
         </>

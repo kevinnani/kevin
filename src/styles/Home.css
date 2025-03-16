@@ -43,5 +43,7 @@ body {
   /* Responsive Design */
   @media screen and (max-width: 768px) {  
  
-    
+    .circles::before, .circles::after {
+      display: none;
+  }
 }

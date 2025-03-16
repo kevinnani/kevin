@@ -6,12 +6,18 @@
 /*   font-family: "Caveat", serif; */
 
 
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+/* font-family: "Caveat", cursive; */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+/* font-family: "Comic Neue", cursive; */
 :root {
     --bg-color: #ffffff;
     --text-color: #333;
     --nav-bg: #f5f5f5;
     --theme_btn:#333;
-    --font: "Caveat", serif;
+    --font: "Comic Neue", cursive;
     --green_clr: ;
     --developer_color:rgb(108, 197, 81);
     --circle_bg_color: #28675c29;
@@ -78,6 +84,8 @@ background: var(--circle_bg_color);
     color: var(--text-color);
     transition: all 0.3s ease-in-out;
     font-family: var(--font);
+    font-weight: 300;
+    
   }
   
   .navbar {

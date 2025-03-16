@@ -29,3 +29,39 @@
 }  */
 
 
+
+
+.teck_cords_contnainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .teck_cord {
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .teck_cord:hover {
+    transform: scale(1.1) rotate(2deg) !important;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .teck_cord svg {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  
+  /* Colors for each tech */
+  .html { color: #f16529; }
+  .css { color: #2965f1; }
+  .svgg { color: #f7df1e; }
+  .react { color: #61dafb; }
+  .node { color: #68a063; }
+  .mysql { color: #0064a5; }
+  .tailwind { color: #38b2ac; }
+  .bootstrap { color: #563d7c; }
+  .mui { color: #0081cb; }
+  

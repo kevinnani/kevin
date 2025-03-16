@@ -28,13 +28,17 @@ body {
 
 .text_primary {
     color: #28675c;
-    white-space: nowrap;
+    /* white-space: nowrap; */
 }
 
 .text_muted{
     color: red;
 }
 
+.lead {
+  font-size: 18px;
+  font-weight: 400;
+}
 
   /* Responsive Design */
   @media screen and (max-width: 768px) {  

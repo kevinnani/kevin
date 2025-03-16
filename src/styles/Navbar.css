@@ -119,9 +119,19 @@
 
 
   /* Responsive Design */
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 900px) {
+
+    .navbar {
+      padding: 6px 32px;
+  }
+  .navbar-container {
+  
+    width: 91%;
+}
     .hamburger {
       display: block;
+      background: none;
+      color: #28675c;
     }
   
     .nav-links {

@@ -48,6 +48,7 @@ export const Navbar = () => {
 
   
   return (
+    
     <nav className={`navbar ${menuOpen ? "open" : ""} ${isScrolled ? "scrolled" : ""}`}>
       <div className="navbar-container">
         <img src={logo} alt="Kevin Img" className="logo" />

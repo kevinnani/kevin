@@ -44,4 +44,45 @@ npm install react-tsparticles
 ALL
 npm install react-tsparticles tsparticles tsparticles-engine tsparticles-react
 
+# deploy
+#  Install GitHub Pages Package
+npm install gh-pages --save-dev
+
+package.json and add:
+"homepage": "https://<your-github-username>.github.io/<your-repo-name>"
+
+scripts
+"scripts": {
+  "start": "vite",
+  "build": "vite build",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+}
+
+# git 
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin https://github.com/<your-github-username>/<your-repo-name>.git
+git push -u origin main
+
+
+npm run deploy
+
+vite.config.js includes
+export default defineConfig({
+  base: "/kevin/", // Add this line
+  plugins: [react()],
+});
+
+# animation 
+✅ Framer Motion for UI animations (recommended)
+npm install framer-motion
+
+✅ GSAP for scroll animations
+npm install gsap
+
+✅ Lottie for icons
+npm install lottie-react
 

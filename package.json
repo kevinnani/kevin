@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -11,11 +10,8 @@
     "preview": "vite preview",
     "start": "vite",
     "homepage": "https://kevinnani.github.io/kevin/",
-
-
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
-
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -24,6 +20,7 @@
     "@reduxjs/toolkit": "^2.6.0",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
+    "framer-motion": "^12.5.0",
     "gsap": "^3.12.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

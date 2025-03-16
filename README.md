@@ -20,3 +20,28 @@ npx tailwindcss init -p
 
 # Rect scrol 
 npm install react-scroll
+
+# bootstrap
+npm install bootstrap
+import "bootstrap/dist/css/bootstrap.min.css";
+
+# MUI
+npm install @mui/material @emotion/react @emotion/styled
+# icons
+npm install @mui/icons-material
+
+
+#Backgrounds
+GSAP (Most Powerful for Animations)
+npm install gsap
+
+#Moving particles & cool effects
+npm install react-tsparticles
+
+# animation 
+npm install react-tsparticles tsparticles
+npm install react-tsparticles
+ALL
+npm install react-tsparticles tsparticles tsparticles-engine tsparticles-react
+
+

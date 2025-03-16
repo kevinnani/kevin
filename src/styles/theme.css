@@ -1,0 +1,112 @@
+/* Default Light Theme */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+/* font-family: "IBM Plex Mono", serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+/*   font-family: "Caveat", serif; */
+
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333;
+    --nav-bg: #f5f5f5;
+    --theme_btn:#333;
+    --font: "Caveat", serif;
+    --green_clr: ;
+    --developer_color:rgb(108, 197, 81);
+    --circle_bg_color: #28675c29;
+    --about_bg:#f5f5f5;
+    --clr_dark_green: #28675c;
+    --footer_bg: #f5f5f5;
+    --form_input_bg: #f5f5f5 ;
+    
+    
+  }
+  
+  /* Dark Theme */
+  [data-theme="dark"] {
+    --bg-color: #02090a;
+    --text-color: #8f919b;
+    --nav-bg: #222;
+    --theme_btn:#ffffff;
+    --developer_color:rgb(255, 255, 255);
+    --circle_bg_color: #28675c73;
+    --about_bg:#03020a;
+    --footer_bg: #0d342d;
+    --form_input_bg: #061416 ;
+
+
+
+
+  }
+
+  /* theme button css */
+  .theamButton_style {
+    position: fixed;
+    right: 0;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    background: rgb(255, 255, 255); /* Default background */
+    transition: background 0.3s ease, backdrop-filter 0.3s;
+}
+
+.navbar.scrolled {
+    background: rgba(0, 2, 8, 0.2); /* Background when scrolled */
+    backdrop-filter: blur(2px);
+}
+
+.text_muted{
+    color: var(--developer_color);
+}
+.ThemeBtn_clr {
+    background: none;
+    border: none;
+    
+    /* box-shadow: 0px 6px 21px 2px var(--theme_btn); */
+}
+
+.circles::before, .circles::after {
+background: var(--circle_bg_color);
+}
+
+  /* Apply Theme */
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: all 0.3s ease-in-out;
+    font-family: var(--font);
+  }
+  
+  .navbar {
+    background-color: var(--nav-bg);
+  }
+  
+
+  /* aboutMe_BG */
+
+  .aboutMe_BG{
+    background: var(--about_bg);
+  }
+
+.sd-list .ed_c {
+    color: var(--clr_dark_green);
+}
+
+/* contact  */
+
+.form_ipt input, textarea {
+  background: var(--form_input_bg);
+  border: none;
+  box-shadow: 0px 3px 18px -5px #FFFAD0;
+}
+
+
+/* footer */
+.ft_container {
+    background: var(--footer_bg);
+    padding: 1rem 0;
+    display: flex;
+}

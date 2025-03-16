@@ -1,0 +1,51 @@
+.flex_container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.Educational_curd{
+    display: flex;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.about__container, .ab_img_c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ed_cdp{
+    font-size: 14px;
+}
+.sd-list {
+    box-shadow: 0px 10px 18px -11px #28675c;
+    padding: 12px;
+    margin: 21px 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+.sd-list::before {
+    content: '';
+    width: 76px;
+    height: 50px;
+    background: #28675c4f;
+    position: absolute;
+    border-radius: 27px 46% 81px;
+    top: 0;
+    left: 0;
+}
+
+.sd-list::after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: #28675c4f;
+    /* position: absolute; */
+    bottom: 0;
+    right: 0;
+}

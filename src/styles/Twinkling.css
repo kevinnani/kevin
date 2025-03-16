@@ -1,0 +1,85 @@
+.home-container {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* Stars Animation */
+.stars, .twinkling {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.stars {
+    background: url('../assets/stars.png') repeat top center;
+    animation: moveStars 50s linear infinite;
+}
+
+@keyframes moveStars {
+    from { background-position: 0 0; }
+    to { background-position: -10000px 5000px; }
+}
+
+/* Twinkling Effect */
+/* .twinkling {
+    background: url('../assets/f247ba83880809db57dded118b56135c.gif') repeat top center;
+    animation: twinkle 5s infinite;
+    background-repeat: no-repeat;
+}
+
+@keyframes twinkle {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+} */
+
+/* Animated Circles */
+.circles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.circles::before, .circles::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    /* background: #28675c29; */
+    animation: pulse 8s infinite ease-in-out;
+}
+
+/* .circles::before {
+    width: 300px;
+    height: 300px;
+    top: 20%;
+    left: 30%;
+} */
+
+.circles::before {
+    width: 100px;
+    height: 100px;
+    top: 40px;
+    /* color: red !important; */
+}
+
+.circles::after {
+    width: 150px;
+    height: 150px;
+    top: 59%;
+    left: 72%;
+}
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 0.6; }
+    50% { transform: scale(1.5); opacity: 0.3; }
+    100% { transform: scale(1); opacity: 0.6; }
+}

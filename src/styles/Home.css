@@ -1,0 +1,43 @@
+/* 
+body {
+    background: linear-gradient(45deg, #ffffff, #ffffff, #9dc8ff, #f6f0ff, #ffffff);
+    background-size: 300% 300%;
+    animation: gradientAnimation 6s infinite linear;
+    height: 100vh;
+    margin: 0;
+    font-family: "IBM Plex Mono", serif; 
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  } */
+
+  .home_contant{
+    justify-content: space-evenly;
+  }
+
+  /* name  */
+
+.text_primary {
+    color: #28675c;
+    white-space: nowrap;
+}
+
+.text_muted{
+    color: red;
+}
+
+
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {  
+ 
+    
+}

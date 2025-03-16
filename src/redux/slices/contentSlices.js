@@ -2,7 +2,7 @@ import {createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 
 export const fetchContent = createAsyncThunk('content/fetchContent', async () => {
     try{
-        const response = await fetch('public/content.json');
+        const response = await fetch('https://kevinnani.github.io/kevin/content.json');
         if (!response.ok){
             throw new Error (` HTTP error status: ${response.status}`);
         }

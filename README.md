@@ -86,3 +86,13 @@ npm install gsap
 ✅ Lottie for icons
 npm install lottie-react
 
+
+
+# Deploy Your App 
+npm install -g firebase-tools
+firebase login
+firebase init
+firebase deploy
+
+
+npm run build

@@ -22,6 +22,8 @@ export const Navbar = () => {
       window.addEventListener("scroll", handelScroll);
       return () => window.removeEventListener("scroll", handelScroll)
   },[])
+
+  
   const dispatch = useDispatch();
   const { navbar, status, error } = useSelector((state) => state.content);
   const [menuOpen, setMenuOpen] = useState(false);

@@ -20,6 +20,7 @@
     "@reduxjs/toolkit": "^2.6.0",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
+    "firebase": "^11.4.0",
     "framer-motion": "^12.5.0",
     "gsap": "^3.12.7",
     "react": "^19.0.0",

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { CiMail } from "react-icons/ci";
 import "../styles/Contact.css";
+import { db, collection, addDoc, doc, getDoc, setDoc } from "../firebas/firebaseConfig";
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
@@ -10,6 +11,7 @@ export const Contact = () => {
     message: "",
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [errors, setErrors] = useState({});
 
   const handleChange = (e) => {
@@ -25,12 +27,43 @@ export const Contact = () => {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (validateForm()) {
-      alert("Form submitted successfully! 🚀");
+    if (!validateForm()) return; // Stop if validation fails
+
+    setIsSubmitting(true); // Disable submit button
+
+    try {
+      // Get the last used ID from Firestore (stored in /counters/contacts)
+      const counterDocRef = doc(db, "counters", "contacts");
+      const counterDocSnap = await getDoc(counterDocRef);
+      let newId = 1; // Default ID if no counter exists
+
+      if (counterDocSnap.exists()) {
+        const data = counterDocSnap.data();
+        newId = data.lastId + 1; // Increment ID
+      }
+
+      // Store new contact with incremented ID
+      await setDoc(doc(db, "contacts", newId.toString()), {
+        id: newId.toString(),
+        name: formData.name,
+        email: formData.email,
+        message: formData.message,
+      });
+
+      // Update the counter document with new lastId
+      await setDoc(counterDocRef, { lastId: newId });
+
+      alert("Message sent successfully!");
       setFormData({ name: "", email: "", message: "" });
+      setErrors({});
+    } catch (error) {
+      console.error("Error adding document:", error);
+      alert("Error sending message. Please try again.");
     }
+
+    setIsSubmitting(false);
   };
 
   return (
@@ -46,7 +79,6 @@ export const Contact = () => {
         </motion.h3>
 
         <div className="contact_form row">
-          {/* Contact Form */}
           <motion.div
             className="contact_crd col-md-4 col-12"
             initial={{ opacity: 0, scale: 0.9 }}
@@ -92,45 +124,10 @@ export const Contact = () => {
                 {errors.message && <p className="error">{errors.message}</p>}
               </div>
 
-              <motion.input
-                className="w-100 submit-btn btn btn-outline-dark btn-lg"
-                type="submit"
-                value="Submit"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              />
+              <button className="w-100 submit-btn btn btn-outline-dark btn-lg" type="submit" disabled={isSubmitting}>
+                {isSubmitting ? "Submitting..." : "Submit"}
+              </button>
             </form>
-          </motion.div>
-
-          {/* Contact Details */}
-          <motion.div
-            className="col-md-6 col-12"
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7 }}
-          >
-            <div className="row">
-              <div className="col-12">
-                <div className="cntf_crd ct_Phone d-flex col-12">
-                  <div className="_phone">
-                    <h3>Contact No:</h3>
-                    <h5 style={{ display: "flex", gap: "15px" }}>
-                      <i className="fas fa-mobile-alt"></i> +91 73825 9233
-                    </h5>
-                    <h5 style={{ display: "flex", gap: "15px" }}>
-                      <i className="fas fa-mobile-alt"></i> +91 97012 9472
-                    </h5>
-                  </div>
-                </div>
-
-                <div className="cntf_crd ct_mail d-flex col-12">
-                  <h3>Mail at</h3>
-                  <h5>
-                    <CiMail /> naveenksarill@gmail.com
-                  </h5>
-                </div>
-              </div>
-            </div>
           </motion.div>
         </div>
       </div>

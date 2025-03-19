@@ -95,4 +95,5 @@ firebase init
 firebase deploy
 
 
-npm run build
+ # npm run build
+# npm run deploy

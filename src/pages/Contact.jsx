@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { CiMail } from "react-icons/ci";
 import "../styles/Contact.css";
-import { db, collection, addDoc, doc, getDoc, setDoc } from "../firebas/firebaseConfig";
+import { db, collection, addDoc, doc, getDoc, setDoc } from "../fire/firebaseConfig";
 
 export const Contact = () => {
   const [formData, setFormData] = useState({

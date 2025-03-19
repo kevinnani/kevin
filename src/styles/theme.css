@@ -25,6 +25,7 @@
     --clr_dark_green: #28675c;
     --footer_bg: #f5f5f5;
     --form_input_bg: #f5f5f5 ;
+    --input_color: #0d342d;
     
     
   }
@@ -40,6 +41,7 @@
     --about_bg:#03020a;
     --footer_bg: #0d342d;
     --form_input_bg: #061416 ;
+    --input_color: #8f919b;
 
 
 
@@ -117,4 +119,13 @@ background: var(--circle_bg_color);
     background: var(--footer_bg);
     padding: 1rem 0;
     display: flex;
+}
+
+.form_ipt input, textarea{
+  color: var(--input_color);
+}
+
+.b_submit {
+  color: #ffff;
+  background: #28675c;
 }

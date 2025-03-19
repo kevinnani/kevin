@@ -102,39 +102,39 @@
 //             </form>
 //           </motion.div>
 
-//           {/* Contact Details */}
-//           <motion.div
-//             className="col-md-6 col-12"
-//             initial={{ opacity: 0, x: 50 }}
-//             animate={{ opacity: 1, x: 0 }}
-//             transition={{ duration: 0.7 }}
-//           >
-//             <div className="row">
-//               <div className="col-12">
-//                 <div className="cntf_crd ct_Phone d-flex col-12">
-//                   <div className="_phone">
-//                     <h3>Contact No:</h3>
-//                     <h5 style={{ display: "flex", gap: "15px" }}>
-//                       <i className="fas fa-mobile-alt"></i> +91 73825 9233
-//                     </h5>
-//                     <h5 style={{ display: "flex", gap: "15px" }}>
-//                       <i className="fas fa-mobile-alt"></i> +91 97012 9472
-//                     </h5>
-//                   </div>
-//                 </div>
+    //       {/* Contact Details */}
+    //       <motion.div
+    //         className="col-md-6 col-12"
+    //         initial={{ opacity: 0, x: 50 }}
+    //         animate={{ opacity: 1, x: 0 }}
+    //         transition={{ duration: 0.7 }}
+    //       >
+    //         <div className="row">
+    //           <div className="col-12">
+    //             <div className="cntf_crd ct_Phone d-flex col-12">
+    //               <div className="_phone">
+    //                 <h3>Contact No:</h3>
+    //                 <h5 style={{ display: "flex", gap: "15px" }}>
+    //                   <i className="fas fa-mobile-alt"></i> +91 73825 9233
+    //                 </h5>
+    //                 <h5 style={{ display: "flex", gap: "15px" }}>
+    //                   <i className="fas fa-mobile-alt"></i> +91 97012 9472
+    //                 </h5>
+    //               </div>
+    //             </div>
 
-//                 <div className="cntf_crd ct_mail d-flex col-12">
-//                   <h3>Mail at</h3>
-//                   <h5>
-//                     <CiMail /> naveenksarill@gmail.com
-//                   </h5>
-//                 </div>
-//               </div>
-//             </div>
-//           </motion.div>
-//         </div>
-//       </div>
-//     </motion.div>
+    //             <div className="cntf_crd ct_mail d-flex col-12">
+    //               <h3>Mail at</h3>
+    //               <h5>
+    //                 <CiMail /> naveenksarill@gmail.com
+    //               </h5>
+    //             </div>
+    //           </div>
+    //         </div>
+    //       </motion.div>
+    //     </div>
+    //   </div>
+    // </motion.div>
 //   );
 // };
 

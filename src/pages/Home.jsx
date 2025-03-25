@@ -50,7 +50,7 @@ export const Home = () => {
                             <p className="lead">
                                 I am a <strong className='text_primary'>front-end developer</strong> with <strong>three years of experience</strong> in building high-performing and interactive web applications. My expertise includes <strong className='text_primary'>React.js, Redux, JavaScript, Tailwind CSS, and Node.js</strong>, allowing me to create dynamic user interfaces and seamless user experiences.
                             </p>
-                            <ul className="lead home_points">
+                            <ul style={{padding:'0'}} className="lead home_points">
                                 <li>🔹 <strong>Passionate about crafting beautiful, responsive, and user-friendly web applications.</strong>
                                 </li>
                                 <li>🔹 <strong>Skilled in modern web technologies and performance optimization.</strong></li>

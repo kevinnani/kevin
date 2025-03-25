@@ -38,7 +38,7 @@ export const TechStack = () => {
 
   return (
     <div className="container mt-4 min-vh-50">
-      <h3 className="mb-4">Tech Stack</h3>
+      <h3 className="mb-4">My Tech Stack</h3>
       <motion.div
         className="tech_stack_container"
         variants={containerVariants}

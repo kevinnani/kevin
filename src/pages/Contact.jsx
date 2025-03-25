@@ -75,7 +75,7 @@ export const Contact = () => {
     >
       <div className="container">
         <motion.h3 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
-          Contact
+          Contact Me
         </motion.h3>
 
         <div className="contact_form row">

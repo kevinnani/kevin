@@ -74,8 +74,15 @@
 }
  
 
+.home_points {
+  font-size: 15px !important;
+}
 
 
+.nav-links .active {
+  font-weight: bold;
+  border-bottom: 2px solid #000000; 
+  }
 
 
 
@@ -149,4 +156,6 @@
       display: flex;
     }
   }
+  
+
   

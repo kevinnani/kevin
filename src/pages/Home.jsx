@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/Home.css";
 import '../styles/Twinkling.css';
 import { motion } from "framer-motion";
-import resum from '../assets/NAVEEN KUMAR SARILLA.pdf'
+import resum from '../assets/NAVEEN KUMAR SARILLA.pdf';
 
 export const Home = () => {
     return (
@@ -45,19 +45,26 @@ export const Home = () => {
                             transition={{ duration: 1, delay: 0.5 }}
                         >
                             <h1 className="fw-bold display-5">
-                                Welcome to my <span className="text_primary">Portfolio</span>
+                                Welcome to My <span className="text_primary">Portfolio</span>
                             </h1>
-                            <p className="lead ">
-                                I am a front-end developer with three years of experience in building interactive and high-performing web applications. Skilled in <span className="text_primary">React.js, Redux, JavaScript, Tailwind CSS, and Node.js</span>, I specialize in creating dynamic user interfaces and seamless user experiences.
+                            <p className="lead">
+                                I am a <strong className='text_primary'>front-end developer</strong> with <strong>three years of experience</strong> in building high-performing and interactive web applications. My expertise includes <strong className='text_primary'>React.js, Redux, JavaScript, Tailwind CSS, and Node.js</strong>, allowing me to create dynamic user interfaces and seamless user experiences.
                             </p>
+                            <ul className="lead home_points">
+                                <li>🔹 <strong>Passionate about crafting beautiful, responsive, and user-friendly web applications.</strong>
+                                </li>
+                                <li>🔹 <strong>Skilled in modern web technologies and performance optimization.</strong></li>
+                                <li>🔹 <strong>Dedicated to delivering high-quality code and innovative solutions.</strong></li>
+                            </ul>
+                            {/* Explore my work and Feel free to get in touch!  */}
+                            <p className="lead">Feel free to get in touch!</p>
 
                             {/* Call to Action Buttons */}
                             <div className="mt-4">
                                 <motion.a 
                                     target='_blank'
-                                    decibel
                                     href={resum} 
-                                    className="btn btn-outline-dark btn-lg "
+                                    className="btn btn-outline-dark btn-lg"
                                     whileHover={{ scale: 1.1 }}
                                     whileTap={{ scale: 0.9 }}
                                 >

@@ -1,4 +1,4 @@
-import resum from '../assets/NAVEEN KUMAR SARILLA.pdf';
+import resum from '../assets/resume naveen kumar.pdf';
 // import '../styles/Resume.css';
 import { motion } from "framer-motion";
 
